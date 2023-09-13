@@ -1,4 +1,4 @@
-public class Main {
+{
     public static void main(String[] args) {
         System.out.println("Hello, World!");
         //Widening Casting
@@ -50,6 +50,44 @@ public class Main {
         System.out.println(Math.sqrt(128)); // this will say the square root
         System.out.println(Math.abs(-10)); // this will return the same number but as a positive
         System.out.println(Math.random()); // Math.random() returns a random number between 0.0 (inclusive), and 1.0 (exclusive)
-        System.out.println((int)(Math.random() * 101)); // To get more control over the random number, for example, if you only want a random number between 0 and 100, you can use the following formula
+        System.out.println((int) (Math.random() * 101)); // To get more control over the random number, for example, if you only want a random number between 0 and 100, you can use the following formula
+
+        int time = 22;
+        if (time < 10) {
+            System.out.println("Good morning.");
+        } else if (time < 18) {
+            System.out.println("Good day.");
+        } else {
+            System.out.println("Good evening.");
+        }
+
+        int day = 4;
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+            default:
+                System.out.println("Looking forward to the Weekend");
+        }
+
+
     }
 }
