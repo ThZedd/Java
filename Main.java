@@ -1,5 +1,6 @@
-{
-    public static void main(String[] args) {
+import java.util.Scanner;
+
+     public static void main(String[] args) {
         System.out.println("Hello, World!");
         //Widening Casting
         //Widening casting is done automatically when passing a smaller size type to a larger size type:
@@ -87,7 +88,21 @@
             default:
                 System.out.println("Looking forward to the Weekend");
         }
-
+          
+          Scanner input = new Scanner(System.in);
+          System.out.println("Enter a line of text: ");
+          String line = input.nextLine(); // this will get a user strinng input
+          System.out.println("You entered: " + line);
+    
+          Scanner  integer = input.nextInt();
+          System.out.println("You entered: " + integer);
+          
+          Scanner doublee = input.nextDouble();
+          System.out.println("You entered: " + doublee);
+          
+          String[] food = {"Meat", "Pizza", "Burguer"}
+          System.out.println(food);
+      
 
     }
 }
