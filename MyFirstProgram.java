@@ -34,6 +34,25 @@ public class MyFirstProgram {
       System.out.println(iade.indexOf("Europeia"));
 
       // for more string methods: https://www.w3schools.com/java/java_ref_string.asp
-      
+
+      if (width == length){
+        System.out.println("Its a Square!");
+      } else if(width > length){
+        System.out.println("Its a Rectangle!");
+      }else{
+        System.out.println("Wtf is that?!");
+      }
+      /* Short Hand if...else
+      There is also a short-hand if else, which is known as the 
+      ternary operator because it consists of three operands.
+
+      It can be used to replace multiple lines of code with a single line, 
+      and is most often used to replace simple if else statements: */
+
+      // Syntax
+      // variable = (condition) ? expressionTrue :  expressionFalse;
+
+      String result = (width == length) ? "Its a Square!" : "Its a Rectangle!";
+      System.out.println(result);
     }  
 }
